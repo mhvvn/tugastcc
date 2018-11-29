@@ -6,7 +6,7 @@ RUN apk add --update nginx && \
 COPY files/nginx.conf /etc/nginx/nginx.conf
 COPY files/default.conf /etc/nginx/conf.d/default.conf
 ADD files/index.html /usr/share/nginx/html/
-ADD files/style.css /user/share/nginx/css/
+ADD files/style.css /user/share/nginx/html/
 ADD files/01.png /usr/share/nginx/html/
 ADD files/02.png /usr/share/nginx/html/
 
